@@ -1,0 +1,16 @@
+﻿@inject IHttpContextAccessor contxt;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <form asp-controller="Home" asp-action="Index" method="post" asp-antiforgery="true">
+        <input name="txtname" type="Text" />
+        <input type="Submit" value="Submit" />
+    </form>
+
+
+</div>
